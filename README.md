@@ -80,10 +80,7 @@ where contactname = "Bilbo Baggins"
 - [x] delete all customers that have no orders. Should delete 18 records.
 ```
 delete from customers
-where not exists (
-  select * from orders
-  where customers.customerid = orders.customerid
-)
+where customerid not in (select customerid from orders)
 ```
 - [x] list orders grouped by customer showing the number of orders per customer. _Rattlesnake Canyon Grocery_ should have 7 orders.
 ```
