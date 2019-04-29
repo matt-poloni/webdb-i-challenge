@@ -64,8 +64,7 @@ insert into customers (
 )
 values (
   "The Shire",
-  "Bilbo
-  Baggins",
+  "Bilbo Baggins",
   "1 Hobbit-Hole",
   "Bag End",
   "111",
