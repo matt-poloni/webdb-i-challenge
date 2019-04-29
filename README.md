@@ -90,7 +90,8 @@ where not exists (
 select customerid, count(*) as Orders
 from orders
 group by customerid
---Rattlesnake Canyon Grocery has customerid 65
+
+-- Rattlesnake Canyon Grocery has customerid 65
 ```
 - [x] list customers names and the number of orders per customer. Sort the list by number of orders in descending order. _Ernst Handel_ should be at the top with 10 orders followed by _QUICK-Stop_, _Rattlesnake Canyon Grocery_ and _Wartian Herkku_ with 7 orders each.
 ```
