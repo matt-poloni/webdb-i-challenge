@@ -36,14 +36,14 @@ Visit [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?
 
 ### Create Database and Table
 
-- use [`SQLite Studio`](https://sqlitestudio.pl/index.rvt) to create a database, name it `budget.sqlite3`.
-- add an `accounts` table with the following _schema_:
+- [x] use [`SQLite Studio`](https://sqlitestudio.pl/index.rvt) to create a database, name it `budget.sqlite3`.
+- [x] add an `accounts` table with the following _schema_:
 
   - `id`, numeric value with no decimal places that should autoincrement.
   - `name`, string, add whatever is necessary to make searching by name faster.
   - `budget` numeric value.
 
-- constraints
+- [x] constraints
   - the `id` should be the primary key for the table.
   - account `name` should be unique.
   - account `budget` is required.
