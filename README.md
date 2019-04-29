@@ -87,11 +87,10 @@ where not exists (
 ```
 - [x] list orders grouped by customer showing the number of orders per customer. _Rattlesnake Canyon Grocery_ should have 7 orders.
 ```
-select c.customername as CustomerName, count(*) as Orders
-from customers as c
-join orders as o
-on c.customerid = o.customerid
-group by o.customerid
+select customerid, count(*) as Orders
+from orders
+group by customerid
+--Rattlesnake Canyon Grocery has customerid 65
 ```
 - [x] list customers names and the number of orders per customer. Sort the list by number of orders in descending order. _Ernst Handel_ should be at the top with 10 orders followed by _QUICK-Stop_, _Rattlesnake Canyon Grocery_ and _Wartian Herkku_ with 7 orders each.
 ```
